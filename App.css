@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px; /* Added for consistency with previous versions */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added for consistency */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.user-id-display {
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+.user-id-display span {
+  font-family: monospace;
+  background: #eee;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.loading-message {
+  text-align: center;
+  color: #888;
+}
+
+.add-todo-form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Added for consistency */
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Added for consistency */
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list p { /* For "No todos yet!" message */
+  text-align: center;
+  color: #888;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff; /* Ensure item background is white */
+  margin-bottom: 5px; /* Spacing between items */
+  border-radius: 4px; /* Rounded corners for items */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+.todo-item span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.edit-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px; /* Space between text and buttons */
+}
+
+.edit-btn {
+  background-color: #2196F3; /* Blue */
+}
+
+.edit-btn:hover:not(:disabled) {
+  background-color: #1976D2; /* Darker blue on hover */
+}
+
+.save-btn {
+  background-color: #008CBA; /* Darker Blue */
+}
+
+.save-btn:hover:not(:disabled) {
+  background-color: #007A9E; /* Even darker blue on hover */
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red */
+}
+
+.delete-btn:hover:not(:disabled) {
+  background-color: #d32f2f; /* Darker red on hover */
+}
